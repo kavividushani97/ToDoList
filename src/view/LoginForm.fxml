@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="409.0" prefWidth="327.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <Label layoutX="127.0" layoutY="103.0" prefHeight="30.0" prefWidth="89.0" text="Login" textFill="#0984e3">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="200.0" layoutX="75.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="63.0" layoutY="188.0" prefHeight="25.0" prefWidth="232.0" promptText="Enter User Name" style="-fx-background-radius: 8px;" />
+      <Label layoutX="31.0" layoutY="163.0" text="User Name" textFill="#0984e3">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="222.0" text="Password" textFill="#0984e3">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="67.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #0984e3; -fx-background-radius: 8px;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="125.0" layoutY="349.0" onMouseClicked="#lblCreateNewAccountOnMouseClicked" prefHeight="17.0" prefWidth="126.0" text="Create New Account" textFill="#0984e3" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="15.0" layoutY="390.0" text="Designed By: KaivndiVidushani">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="63.0" layoutY="249.0" prefHeight="25.0" prefWidth="232.0" promptText="Enter the Password" style="-fx-background-radius: 8px;" />
+   </children>
+</AnchorPane>
